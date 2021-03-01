@@ -51,7 +51,9 @@ PRODUCT_COPY_FILES += \
  PRODUCT_PACKAGES += \
      OPScreenRecorder
 
-
+# IMS
+PRODUCT_PACKAGES += \
+     mtkims
 
 # Lights
 PRODUCT_PACKAGES += \
