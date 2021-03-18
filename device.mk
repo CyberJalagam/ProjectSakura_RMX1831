@@ -78,6 +78,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.mt6771 \
     init.target.rc \
+    init.volte.rc \
     init.recovery.mt6771.rc \
     init.recovery.usb.rc \
     set_zram.sh
@@ -160,7 +161,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel
 
 # Product properties
--include $(LOCAL_PATH)/product_prop.mk
+-include $(LOCAL_PATH)/system.prop
 
 # fstab
 PRODUCT_COPY_FILES += \
@@ -178,7 +179,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 28
 PRODUCT_PACKAGES += \
     RcsService
 
-# ImsInit
+# IMS
 PRODUCT_PACKAGES += \
     ImsInit \
     TrebleApp \
